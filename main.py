@@ -1,14 +1,12 @@
 from tkinter import *
 from tkinter import filedialog 
-from PIL import Image, ImageTk, ImageDraw, ImageFont
-import matplotlib.pyplot as plt
-
+from PIL import Image, ImageDraw, ImageFont
 
 
 window = Tk()
 window.title("Watermarker")
 window.config(padx=50, pady=10)
-#Add space around the window.
+
 canvas = Canvas(height=200, width=200)
 logo_img = PhotoImage(file="camera.png")
 logo = Label(image=logo_img)
